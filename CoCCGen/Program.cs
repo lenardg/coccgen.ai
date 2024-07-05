@@ -35,60 +35,43 @@ internal class Program {
 
         // print to screen
         Console.WriteLine("=======================================");
-        Console.WriteLine($"{character.Name}, Age: {character.Age}, Occupation: {character.Occupation}");
-        Console.WriteLine(character.Attributes.ToString());
-        Console.WriteLine($"HP: {character.Scores.HP}, DB: {character.Scores.DamageBonus}, Build: {character.Scores.Build}, Move: {character.Scores.Move}, MP: {character.Scores.MP}, Luck: {character.Scores.Luck}");
-        Console.WriteLine("--");
-        foreach (var sk in character.Skills.OrderBy(sk => sk.SkillName).ThenBy(sk => sk.Specialization)) {
-            Console.WriteLine(sk.ToString());
+        using ( var sw = new StreamWriter(Console.OpenStandardOutput()) ) {
+            Output(character, sw, shortRequest, true);
         }
-        Console.WriteLine("--");
-        Console.WriteLine("Backstory:");
-        Console.WriteLine();
-        Console.WriteLine(character.Backstory);
-        Console.WriteLine();
-        Console.WriteLine(character.Traits);
 
-        //debug
-        Console.WriteLine("--");
-        Console.WriteLine("Debug");
-        Console.WriteLine(shortRequest);
-        Console.WriteLine(character.OccupationalSkills);
-        Console.WriteLine(character.NonOccupationalSkills);
-        Console.WriteLine("--");
-        Console.WriteLine("AI token usage");
-        Console.WriteLine($" > input tokens: {ai.InputTokens}");
-        Console.WriteLine($" > output tokens: {ai.OutputTokens}");
-        Console.WriteLine($" > total tokens: {ai.TotalTokens}");
-
+        // now print the same things as the screen into the text file
         var roughFilename = $"{character.Name} {character.Age} {character.Occupation}.txt";
         var validFilename = Regex.Replace(roughFilename, @"[^a-zA-Z0-9\.]", "_");
-        // now print the same things as the screen into the text file
         using (var file = new StreamWriter(validFilename)) {
-            file.WriteLine($"{character.Name}, Age: {character.Age}, Occupation: {character.Occupation}");
-            file.WriteLine(character.Attributes.ToString());
-            file.WriteLine($"HP: {character.Scores.HP}, DB: {character.Scores.DamageBonus}, Build: {character.Scores.Build}, Move: {character.Scores.Move}, MP: {character.Scores.MP}, Luck: {character.Scores.Luck}");
-            file.WriteLine("--");
-            foreach (var sk in character.Skills.OrderBy(sk => sk.SkillName).ThenBy(sk => sk.Specialization)) {
-                file.WriteLine(sk.ToString());
-            }
-            file.WriteLine("--");
-            file.WriteLine("Backstory:");
-            file.WriteLine();
-            file.WriteLine(character.Backstory);
-            file.WriteLine();
-            file.WriteLine(character.Traits);
-
-            file.WriteLine("--");
-            file.WriteLine("Debug");
-            file.WriteLine(shortRequest);
-            file.WriteLine(character.OccupationalSkills);
-            file.WriteLine(character.NonOccupationalSkills);
-
+            Output(character, file, shortRequest);
         }
     }
 
+    private static void Output(COCCharacter character, StreamWriter output, string shortRequest, bool debug = false) {
+        output.WriteLine($"{character.Name}, Age: {character.Age}, Occupation: {character.Occupation}");
+        output.WriteLine(character.Attributes.ToString());
+        output.WriteLine($"HP: {character.Scores.HP}, DB: {character.Scores.DamageBonus}, Build: {character.Scores.Build}, Move: {character.Scores.Move}, MP: {character.Scores.MP}, Luck: {character.Scores.Luck}");
+        output.WriteLine("--");
+        foreach (var sk in character.Skills.OrderBy(sk => sk.SkillName).ThenBy(sk => sk.Specialization)) {
+            output.WriteLine(sk.ToString());
+        }
+        output.WriteLine("--");
+        output.WriteLine("Backstory:");
+        output.WriteLine();
+        output.WriteLine(character.Backstory);
+        output.WriteLine();
+        output.WriteLine(character.Traits);
 
-
-
+        //debug
+        output.WriteLine("--");
+        output.WriteLine("Debug");
+        output.WriteLine(shortRequest);
+        output.WriteLine(character.OccupationalSkills);
+        output.WriteLine(character.NonOccupationalSkills);
+        output.WriteLine("--");
+        output.WriteLine("AI token usage");
+        output.WriteLine($" > input tokens: {ai.InputTokens}");
+        output.WriteLine($" > output tokens: {ai.OutputTokens}");
+        output.WriteLine($" > total tokens: {ai.TotalTokens}");
+    }
 }

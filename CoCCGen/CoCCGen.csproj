@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoCCGen-AI-Core\CoCCGen.Core.csproj" />
+    <ProjectReference Include="..\CoCCGen.Core\CoCCGen.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
