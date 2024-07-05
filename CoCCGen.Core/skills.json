@@ -1,0 +1,289 @@
+[
+  {
+    "name": "Accounting",
+    "specialization": false,
+    "defaultValue": 5
+  },
+  {
+    "name": "Anthropology",
+    "specialization": false,
+    "defaultValue": 1
+  },
+  {
+    "name": "Appraise",
+    "specialization": false,
+    "defaultValue": 5
+  },
+  {
+    "name": "Archaeology",
+    "specialization": false,
+    "defaultValue": 1
+  },
+  {
+    "name": "Art/Craft",
+    "specialization": true,
+    "defaultValue": 5,
+    "possibleSpecs": [
+      "Acting",
+      "Barber",
+      "Calligraphy",
+      "Carpenter",
+      "Cook",
+      "Dancer",
+      "Fine Art",
+      "Forgery",
+      "Writer",
+      "Morris Dancer",
+      "Opera Singer",
+      "Painter and Decorator",
+      "hotographer",
+      "Potter",
+      "Sculptor",
+      "Vacuum-Tube Blower"
+    ]
+  },
+  {
+    "name": "Charm",
+    "specialization": false,
+    "defaultValue": 15
+  },
+  {
+    "name": "Climb",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Credit Rating",
+    "specialization": false,
+    "defaultValue": 0
+  },
+  {
+    "name": "Cthulhu Mythos",
+    "specialization": false,
+    "defaultValue": 0
+  },
+  {
+    "name": "Disguise",
+    "specialization": false,
+    "defaultValue": 5
+  },
+  {
+    "name": "Dodge",
+    "specialization": false,
+    "defaultValue": -20
+  },
+  {
+    "name": "Drive Auto",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Electrical Repair",
+    "specialization": false,
+    "defaultValue": 10
+  },
+  {
+    "name": "Fast Talk",
+    "specialization": false,
+    "defaultValue": 5
+  },
+  {
+    "name": "Fighting (Brawl)",
+    "specialization": false,
+    "defaultValue": 25
+  },
+  {
+    "name": "Firearms (Handgun)",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Firearms (Rifle/Shotgun)",
+    "specialization": false,
+    "defaultValue": 25
+  },
+  {
+    "name": "First Aid",
+    "specialization": false,
+    "defaultValue": 30
+  },
+  {
+    "name": "History",
+    "specialization": false,
+    "defaultValue": 5
+  },
+  {
+    "name": "Intimidate",
+    "specialization": false,
+    "defaultValue": 15
+  },
+  {
+    "name": "Jump",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Language",
+    "specialization": true,
+    "defaultValue": 1
+  },
+  {
+    "name": "Language (Own)",
+    "specialization": false,
+    "defaultValue": -50
+  },
+  {
+    "name": "Law",
+    "specialization": false,
+    "defaultValue": 5
+  },
+  {
+    "name": "Library Use",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Listen",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Locksmith",
+    "specialization": false,
+    "defaultValue": 1
+  },
+  {
+    "name": "Mechanical Repair",
+    "specialization": false,
+    "defaultValue": 10
+  },
+  {
+    "name": "Medicine",
+    "specialization": false,
+    "defaultValue": 1
+  },
+  {
+    "name": "Natural World",
+    "specialization": false,
+    "defaultValue": 10
+  },
+  {
+    "name": "Navigate",
+    "specialization": false,
+    "defaultValue": 10
+  },
+  {
+    "name": "Occult",
+    "specialization": false,
+    "defaultValue": 5
+  },
+  {
+    "name": "Operate Heavy Machinery",
+    "specialization": false,
+    "defaultValue": 1
+  },
+  {
+    "name": "Persuade",
+    "specialization": false,
+    "defaultValue": 10
+  },
+  {
+    "name": "Pilot",
+    "specialization": true,
+    "defaultValue": 1,
+    "possibleSpecs": [
+      "Balloon",
+      "Single-engine",
+      "Multi-engine",
+      "Airliner",
+      "Fighterjet",
+      "Sailboat",
+      "Submarine",
+      "Boat"
+    ]
+  },
+  {
+    "name": "Psychoanalysis",
+    "specialization": false,
+    "defaultValue": 1
+  },
+  {
+    "name": "Psychology",
+    "specialization": false,
+    "defaultValue": 10
+  },
+  {
+    "name": "Read Lips",
+    "specialization": false,
+    "defaultValue": 1
+  },
+  {
+    "name": "Ride",
+    "specialization": false,
+    "defaultValue": 5
+  },
+  {
+    "name": "Science",
+    "specialization": true,
+    "defaultValue": 1,
+    "possibleSpecs": [
+      "Astronomy",
+      "Biology",
+      "Botany",
+      "Chemistry",
+      "Cryptography",
+      "Engineering",
+      "Forensics",
+      "Geology",
+      "Mathematics",
+      "Meteorology",
+      "Pharmacy",
+      "Physics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Sleight of Hand",
+    "specialization": false,
+    "defaultValue": 10
+  },
+  {
+    "name": "Spot Hidden",
+    "specialization": false,
+    "defaultValue": 25
+  },
+  {
+    "name": "Stealth",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Survival",
+    "specialization": true,
+    "defaultValue": 10,
+    "possibleSpecs": [
+      "Arctic",
+      "Desert",
+      "Jungle",
+      "Mountain",
+      "Ocean",
+      "Plains",
+      "Urban"
+    ]
+  },
+  {
+    "name": "Swim",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Throw",
+    "specialization": false,
+    "defaultValue": 20
+  },
+  {
+    "name": "Track",
+    "specialization": false,
+    "defaultValue": 10
+  }
+]
