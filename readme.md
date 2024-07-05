@@ -9,7 +9,10 @@ together to make a full character.
 
 ## Requirements
 
-This was designed using .NET 8. You should be able to run it under Linux, MacOS or Windows. 
+This was designed using .NET 8, to be run under the console.
+
+Althouth it should be able to run under Linux, MacOS or Windows, currently at least Linux seems to
+be broken. This might be because of the OpenAI library. 
 
 You will need an OpenAI API key. Create a new file called `apikey.txt`, and this should contain 
 only your API key. Put it in the root of the CoCCgen folder. The app will complain if the file 
